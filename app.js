@@ -19,7 +19,4 @@ app.use(authorize.AuthorizeUser);
 app.use('/users', usersRouter);
 
 
-
-// app.use('/blood', bloodRouter);
-
 app.listen(process.env.port||3001);
