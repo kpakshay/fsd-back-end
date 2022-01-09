@@ -1,7 +1,7 @@
 const mongoose=require("mongoose")
 exports.connect=()=>{
     try{
-        mongoose.connect("mongodb+srv://Akshay:Akshay@cluster0.u7akf.mongodb.net/bloodbank?retryWrites=true&w=majority");
+        mongoose.connect("MONGO_URL");
     }catch(err){
         console.log(err)
     }
