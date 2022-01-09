@@ -15,7 +15,7 @@ app.use(cors());
 app.use('/register', registerRouter);
 
 app.use(authorize.AuthorizeUser);
-// app.use('/', indexRouter);
+app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 
