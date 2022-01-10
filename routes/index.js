@@ -1,15 +1,13 @@
 var express = require('express');
 var router = express.Router();
-var bloodModule = require('../modules/bloodModule.js');
 
 /* GET home page. */
 // router.get('/getblood', bloodModule.getblood);
 
 
-router.search('/', function(req, res, next) {
-    //   res.render('index', { title: 'Express' });
-    res.send("this search");
-    });
+router.get('/', function(req, res, next) {
+    res.render('index page');
+  });
 
 
 module.exports = router;
