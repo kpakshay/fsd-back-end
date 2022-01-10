@@ -13,9 +13,10 @@ app.use(express.json());
 mongo.connect();
 app.use(cors());
 app.use('/register', registerRouter);
+app.use('/', indexRouter);
 
 app.use(authorize.AuthorizeUser);
-app.use('/', indexRouter);
+
 app.use('/users', usersRouter);
 
 
