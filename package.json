@@ -20,5 +20,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.1.5"
   },
-  "engines":{"node":"16.13.0"}
+  "engines":{
+    "npm":"8.1.0",
+    "node":"16.13.0"
+  }
 }
