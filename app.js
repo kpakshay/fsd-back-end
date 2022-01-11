@@ -5,7 +5,7 @@ const indexRouter = require('./routes/index.js');
 const usersRouter = require('./routes/users.js')
 var registerRouter = require('./routes/register.js');
 const cors=require("cors");
-const authorize=require("./modules/authorize")
+const authorize=require("./modules/authorize");
 // dotenv.config();
 const app = express();
 // To convert req.body into json format
