@@ -12,12 +12,14 @@ const app = express();
 app.use(express.json());
 mongo.connect();
 app.use(cors());
-app.use('/register', registerRouter);
+
 app.use('/', indexRouter);
+app.use('/register', registerRouter);
+
 
 app.use(authorize.AuthorizeUser);
 
 app.use('/users', usersRouter);
 
 
-app.listen(process.env.port||3001);
+app.listen(process.env.PORT||3001);
